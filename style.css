@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /* Importar fonte Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /* Importar fonte Kode Mono */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap'); /* Importar fonte Rubik Wet Paint */
+
+* {margin: 0; padding: 0;}
+
+:root { /* Definir variaveis do CSS */
+    --poppins-font: "Poppins", sans-serif;
+    --kode-mono-font: "Kode Mono", monospace;
+    --rubik-wet-font: "Rubik Wet Paint", system-ui;
+}
+
+body {
+    background: linear-gradient(135deg, #007BFF, #DC493A);
+    background-attachment: fixed;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+#mainHeader {
+    background-color: #007BFF;
+}
+
+#logoMain {
+    width: 60px;
+    position: absolute;
+}
+
+.nav-header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+a {
+    font-family: var(--poppins-font);
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration-line: none;
+    color: #FFFFFF;
+    margin-right: 25px;
+}
+
+a:hover {
+    transition: linear;
+    transition-duration: 0.3s;
+    color: #DC493A;
+}
+
+#homePaginaInicial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+.sections-d {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sections-d section {
+    max-width: 600px;
+    text-align: justify;
+    padding: 0 20px;
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-family: var(--poppins-font);
+}
+
+h3 {
+    font-family: var(--rubik-wet-font);
+}
+
+p {
+    font-family: var(--kode-mono-font);
+}
+
+#linguagensStudying {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+#linguagensStudying img {
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+#linguagensStudying p {
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+
+#whatsContact {
+    width: 100px;
+    position: fixed;
+    bottom: 2%;
+    right: 10px;
+    max-width: 600px;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+.footer-main-d {
+    text-align: center;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.footer-main-d p {
+    margin-top: 10px;
+}
+
+#contactForm {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+#contactForm textarea {
+    resize: vertical;
+}
+
+#contactForm button {
+    background-color: #C2392B;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #DC493A;
+}
+
+/* Responsividade */
+@media only screen and (min-width: 768px) {
+    .nav-header {
+        padding: 15px 20px;
+    }
+
+    a {
+        font-size: 18px;
+        margin-right: 30px;
+    }
+
+    .sections-d section {
+        padding: 0 40px;
+    }
+
+    #whatsContact {
+        width: 120px;
+    }
+
+    #contactForm {
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .nav-header {
+        padding: 10px;
+    }
+
+    a {
+        font-size: 14px;
+        margin-right: 20px;
+    }
+
+    .sections-d section {
+        padding: 0 20px;
+        max-width: 90%;
+    }
+
+    #whatsContact {
+        width: 80px;
+    }
+
+    #contactForm {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .nav-header {
+        padding: 5px;
+    }
+
+    a {
+        font-size: 12px;
+        margin-right: 15px;
+    }
+
+    .sections-d section {
+        padding: 0 10px;
+    }
+
+    #whatsContact {
+        width: 60px;
+    }
+
+    #contactForm {
+        max-width: 90%;
+    }
+}
